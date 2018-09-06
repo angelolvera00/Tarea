@@ -1,42 +1,31 @@
 /*
- * This program is made to solve an operation with 2 numbers given
+ * Este programa nos ayudara a calcular el area de un triangulo, dados la base y la altura del mismo.
  *
- * Author: Angel Olvera
- * August 23, 20118
- * Mail: angelolvera00@gmail.com
+ * Autor: Angel Olvera
+ * 21 de Agosto de 2018
+ * Correo: angelolvera00@hotmai.com
  */
-
 #include <stdio.h>
 
 int main() {
-    //Variables are declared
+    //Declaración de variables
+    double base;
+    double altura;
+    double area;
 
-    double number1;
-    double number2;
-    double sum;
-    double subtraction;
-    double division;
-    double multiplication;
+    //Aqui le pido al usuario la base y la altura del triangulo
+    printf("Bienvenido, te ayudare a calcular el area de un triangulo");
+    printf("Dame la longitud de la base: ");
+    scanf("%lf", &base);
+    printf("Dame la altura del triangulo: ");
+    scanf("%lf", &altura);
 
-    //The user is asked to enter the numbers
-    printf("Enter the first number: ");
-    scanf("%lf", &number1);
-    printf("Enter the second number: ");
-    scanf("%lf", &number2);
+    //Aqui calculo el area del triangulo
+    area = (base * altura) /2 ;
 
-    //The operation is performed
-    sum = number1 + number2;
-    subtraction = number1 - number2;
-    division = number1 / number2;
-    multiplication = number1 * number2;
+    //Aqui le muestro al usuario el area del triangulo
 
-
-    //The result is given
-
-    printf("The sum is = %lf\n", sum);
-    printf("The subtraction is = %lf\n", subtraction);
-    printf("The division is = %lf\n", division);
-    printf("The multiplication is = %lf\n", multiplication);
+    printf("El area del triangulo es: %lf\n", area);
 
     return 0;
 }

@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.12)
-project(untitled2 C)
+# cmake_minimum_required(VERSION <specify CMake version here>)
+project(untitled C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled2 main.c)
+add_executable(untitled main.c)

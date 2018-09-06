@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\USUARIO FINAL\CLionProjects\01-TwoNumbers-angelolvera00"
+CMAKE_SOURCE_DIR = "C:\Users\USUARIO FINAL\CLionProjects\untitled"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\USUARIO FINAL\CLionProjects\01-TwoNumbers-angelolvera00\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\USUARIO FINAL\CLionProjects\untitled\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\USUARIO FINAL\CLionProjects\01-TwoNumbers-angelolvera00\cmake-build-debug\CMakeFiles" "C:\Users\USUARIO FINAL\CLionProjects\01-TwoNumbers-angelolvera00\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\USUARIO FINAL\CLionProjects\untitled\cmake-build-debug\CMakeFiles" "C:\Users\USUARIO FINAL\CLionProjects\untitled\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\USUARIO FINAL\CLionProjects\01-TwoNumbers-angelolvera00\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\USUARIO FINAL\CLionProjects\untitled\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled2
+# Target rules for targets named untitled
 
 # Build rule for target.
-untitled2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 untitled2
-.PHONY : untitled2
+untitled: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 untitled
+.PHONY : untitled
 
 # fast build rule for target.
-untitled2/fast:
-	$(MAKE) -f CMakeFiles\untitled2.dir\build.make CMakeFiles/untitled2.dir/build
-.PHONY : untitled2/fast
+untitled/fast:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
+.PHONY : untitled/fast
 
 main.obj: main.c.obj
 
@@ -128,7 +128,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\untitled2.dir\build.make CMakeFiles/untitled2.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -137,7 +137,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\untitled2.dir\build.make CMakeFiles/untitled2.dir/main.c.i
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -146,7 +146,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\untitled2.dir\build.make CMakeFiles/untitled2.dir/main.c.s
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -155,8 +155,8 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... untitled2
 	@echo ... edit_cache
+	@echo ... untitled
 	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
